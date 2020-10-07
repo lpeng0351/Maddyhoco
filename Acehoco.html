@@ -1,0 +1,75 @@
+<html>
+  <body style = "background-color: pink">
+    <title>
+      Maddy Way
+    </title>
+  <div class = "toptitle">
+    <h1> Maddy Way </h1>
+  </div>
+  <style>
+    .toptitle {
+      padding: 40px;
+      text-align: center;
+      color: black;
+      font-size: 80px;
+      background-color: pink;
+    }
+  </style>
+  <img class="mySlides" src="img_snowtops.jpg" style = "width: 400px; height:400px">
+  <img class="mySlides" src="img_lights.jpg" style = "width: 400px; height:400px">
+  <img class="mySlides" src="img_mountains.jpg" style = "width: 400px; height:400px">
+  <img class="mySlides" src="img_forest.jpg" style = "width: 400px; height:400px">
+  <style>
+    .myslides {
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      background-color: white;
+    }
+  </style>
+  <script>
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+  </script>
+  <div class = "para">
+    <p>
+      You sir are my favorite annoying person. As you know I've liked you a long time. I like your personality. The sassy way you talk and think. Your cute voice on the phone. Ur annoyingness in never listening to others advice. Your intelligence, that despite what u think, is second to none. Thats not even starting on how pretty u are. I like your "chipmunk cheeks", I like your lips that just dont need plastic surgery. Your eyes that are most stunning eyes Ive ever looked at, and the only ones that I remember(oops). Ur a queen and u could rule the world if u chose to do so.
+    </p>
+  </div>
+  <style>
+    .para {
+      padding: 10px;
+      text-align: center;
+      color: black;
+      font-size: 20px;
+      background-color: pink;
+    }
+  </style>
+  <div class = "hocoask">
+    <h3> Ace, wanna go to fake homecoming with me?</h3>
+  </div>
+  <style>
+    .hocoask {
+      padding: 10px;
+      text-align: center;
+      color: black;
+      font-size: 40px;
+      background-color: pink;
+      }
+  </style>
+   </body>
+</html>
